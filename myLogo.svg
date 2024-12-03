@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+width="200" height="200">
+
+    <defs>
+        <style>
+        <!-- style rules here -->
+            polygon{
+                fill:#db9200;
+            }
+            rect{
+                fill:darkgreen;
+            }
+            circle{
+                fill:#006eff;
+            }
+            text{
+                font-size: 100px;
+                fill:#c70c0c;
+            }
+
+            polygon:hover, rect:hover, circle:hover, text:hover{
+                opacity: 0.5;
+                stroke:#006eff;
+                stroke-width: 10px;
+            }
+
+            polygon:active, rect:active, circle:active, text:active{
+                opacity: 0.2;
+                stroke:#3300ff;
+                stroke-width: 10px;
+            }
+        </style>
+    </defs>
+ <!-- paste your svg code here -->
+
+    <title>A graphic of a blue circle partially covering a yellow hexagon that is partially covering a green rectangle.</title>
+
+    <a href="https://www.youtube.com/">
+        <rect x="150" y="0" width="50" height="200"></rect>
+    </a>
+
+    <polygon points="50,0 25,100 50,200 150,200 175,100 150,0"></polygon>
+
+    <a href="https://emilydidthis.github.io/CSCI-UA.0004-Fall24/">
+        <circle cx="50" cy="100" r="50"></circle>
+    </a>
+
+    <text x="60" y="80">RD</text>
+</svg>

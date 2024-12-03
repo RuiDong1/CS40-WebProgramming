@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cyber Attacks</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1 class="title">Attack Types</h1>
+        </header>
+        
+        <nav class="navbar">
+            <div id="menuIcon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30">
+                    <line x1="5" y1="10" x2="25" y2="10" stroke="white"></line>
+                    <line x1="5" y1="15" x2="25" y2="15" stroke="white"></line>
+                    <line x1="5" y1="20" x2="25" y2="20" stroke="white"></line>
+                </svg>
+            </div>
+            <div id="navLinks">
+                <h2 class="nav-item"><a href="index.html">Home</a></h2>
+                <h2 class="nav-item"><a href="cyberAttacks.html">Attack Types</a></h2>
+                <h2 class="nav-item"><a href="prevention.html">Prevention</a></h2>
+            </div>
+        </nav>
+
+        <main>
+            <div id="calendar">
+                <div>
+                    <h2>Today is:</h2>
+                    <h2 id="dayOfWeek">Today</h2>
+                </div>
+                <img id="calendarPic" src="images/week-day-monday-icon.svg" alt="picture of monday on a calendar">
+            </div>
+            
+            <br>
+
+            <div id = "buttons">
+                <button id="backgroundColorButton">Change background color</button>
+                <button id="quoteButton">Give me an inspiring quote</button>
+            </div>
+
+            <br>
+
+            <div id="quote">
+                <quote>A very wise quote</quote>
+            </div>
+
+            <img class="topImage" src="images/topImage2x1.png" srcset="images/topImage2x1.png 533w, images/topImage2x2.png 1067w, images/topImage2x3.png 1600w" sizes="(min-width: 768px) 1067px, (min-width: 1024px) 1600px" alt="picture of error in code" width=auto height=auto>
+
+            <h1>Types of common Cyber Attacks</h1>
+
+            <div class="wrapper1">
+            
+                <div class="attackImg1">
+                    <img src="images/attackImg1x3.svg" alt="picture of phishing attack" width=400px height=auto>
+                </div>
+                <div class="attackDescription1 textSection">
+                    <h2>Phishing</h2>
+                    <p>Phishing attacks trick victims into revealing sensitive information, such as someone’s name, password, address, or confidential company information. Phishing attacks are often carried out by the attacker pretending to be someone the victim trusts such as a friend or co-worker messaging them through email or messages. These messages can include links to websites that contain malware or lure the user to input personal information by pretending to be a legitimate website. Phishing attacks are common and may be hard to avoid people who are not aware of it, particularly older people, and can lead to losses of sensitive personal information such as bank account details. There are variants of phishing such as spear-phishing and whale phishing. Spear-phishing is when phishing is targeted at specific individuals so the phishing message may be crafted with more personal details to the victim. Whale phishing targets people in positions of power such as executives or CEO.</p>
+                </div>
+            
+                <div class="attackImg2">
+                    <img src="images/attackImg2x1.webp" srcset="images/attackImg2x1.webp 267w, images/attackImg2x2.webp 533w, images/attackImg2x3.webp 800w" sizes="(min-width: 768px) 533px, (min-width: 1024px) 800px" alt="picture of ransomeware attack" width=400px height=auto>
+                </div>
+                <div class="attackDescription2 textSection">
+                    <h2>Ransomeware</h2>
+                    <p>Ransomware is a type of malware that encrypts a victim’s files, making it so that the victim cannot access their files and locks them out of their computer system. Attackers do this so they can demand a ransom payment in exchange for restoring access to the data. This payment is typically done through cryptocurrency to make it hard to track who the payment was to. There is often a countdown when the ransomware is activated to increase the urgency of the victim to pay the attacker. After the countdown reaches zero, the ransom price may increase or the data may be deleted forever. However, if the victim has backed up their data or does not need the data on the compromised system to be restored. The victim may just choose to delete everything and reinstall their system from scratch to delete the virus. Ransomware attacks can target anyone and cause annoyance and significant loss of data. </p>
+                </div>
+            
+            
+                <div class="attackImg3">
+                    <img src="images/attackImg3x1.png" srcset="images/attackImg3x1.png 453w, images/attackImg3x2.png 907w, images/attackImg3x3.png 1360w" sizes="(min-width: 768px) 907px, (min-width: 1024px) 1360px" alt="picture of Distributed Denial of Service attack" width=400px height=auto>
+                </div>
+                <div class="attackDescription3 textSection">
+                    <h2>Distributed Denial of Service(DDoS)</h2>
+                    <p>The purpose of a Distributed Denial of Service (DDoS) attack is to bring down the availability of a website or service. This is carried out by flooding the website with illegitimate traffic from fake users. Attackers flood the website with traffic from computers they control, these computers may be compromised computers of people who don't know that their computer is being controlled. These hacker-controlled computers form what is called a botnet. Since the traffic comes from many different computers, the traffic originates from different addresses, and is hard to determine real traffic and malicious traffic to block. DDoS attacks can severely damage a business's reputation and finance. Even the biggest companies may be vulnerable to these attacks. </p>
+                </div>
+            
+                <div class="attackImg4">
+                    <img src="images/attackImg4x1.png" srcset="images/attackImg4x1.png 267w, images/attackImg4x2.png 533w, images/attackImg4x3.png 800w" sizes="(min-width: 768px) 533px, (min-width: 1024px) 800px" alt="picture of Man-in-the-middle attack" width=400px height=auto>
+                </div>
+                <div class="attackDescription4 textSection">
+                    <h2>Man-in-the-Middle Attack</h2>
+                    <p>A Man-in-the-Middle (MitM) attack, also known as an on-path attack, occurs when an attacker intercepts communication between two devices without their knowledge. The attacker can record their communication, allowing the attacker to steal sensitive data and alter the data before forwarding the traffic back between the 2 devices so the 2 devices have no idea anything is wrong. An example of a Man-in-the-middle attack is ARP(Address resolution protocol) poisoning which is when an attacker sends out illegitimate ARP messages to devices on the local network claiming to have the IP address of the device they are talking to, redirecting the traffic between the 2 devices to the attacker device. Man-in-the-middle attacks are often carried out on unsecured public Wi-Fi. Information that can be stolen includes bank details, emails, and usernames and passwords. </p>
+                </div>
+            
+            </div>
+        </main>
+    
+        <footer>
+        </footer> 
+        <script src="javascript.js"></script>
+    </body>
+</html>

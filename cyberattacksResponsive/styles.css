@@ -1,0 +1,262 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('Classyvogueregular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-color: lightsteelblue;
+    font-family: "CustomFont";
+}
+
+nav{
+    display: flex; 
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+}
+
+.nav-item{
+    background-color: lightsalmon;
+    border: 5px solid darkred;
+    font-size: 1.2em;
+    padding: 1%;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+    margin: 1%;
+    text-align: center;
+  }
+
+.attackDescription1 { grid-area: a; }
+.attackDescription2 { grid-area: b; }
+.attackDescription3 { grid-area: c; }
+.attackDescription4 { grid-area: d; }
+.attackImg1 { grid-area: e; }
+.attackImg2 { grid-area: f; }
+.attackImg3 { grid-area: g; }
+.attackImg4 { grid-area: h; }
+
+.preventionDescription1 { grid-area: i; }
+.preventionDescription2 { grid-area: j; }
+.preventionDescription3 { grid-area: k; }
+.preventionImg1 { grid-area: m; }
+.preventionImg2 { grid-area: n; }
+.preventionImg3 { grid-area: o; }
+
+.galleryImg1 { grid-area: q; }
+.galleryImg2 { grid-area: r; }
+.galleryImg3 { grid-area: s; }
+.galleryImg4 { grid-area: t; }
+
+.wrapper1 {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5%;
+    grid-template-areas:
+    "e"
+    "a"
+    "f"
+    "b"
+    "g"
+    "c"
+    "h"
+    "d";
+}
+
+.wrapper2 {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5%;
+    grid-template-areas:
+    "m"
+    "i"
+    "n"
+    "j"
+    "o"
+    "k";
+}
+
+.wrapper3 {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5%;
+    grid-template-areas:
+    "q"
+    "r"
+    "s"
+    "t";
+}
+
+.topImage{
+    width: 100%;
+}
+
+img{
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.textSection{
+    border: 10px solid darkred;
+    border-radius: 5%;
+    padding: 0%;
+}
+
+p{
+    font-size: 1.2em;
+    background-color: lightsalmon;
+    padding: 2%;
+    border-radius: 5%;
+    margin: 0%;
+}
+h1{
+    font-size: 2em;
+}
+h2{
+    font-size: 1.5em;
+}
+
+
+
+
+/* TABLET LAYOUT */
+@media (min-width: 768px){
+    .wrapper1 {
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2%;
+        grid-template-areas:
+        "e f"
+        "a b"
+        "g h"
+        "c d";
+    }
+    .wrapper2 {
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2%;
+        grid-template-areas:
+        "m n"
+        "i j"
+        "o ."
+        "k .";
+    }
+    
+    .wrapper3 {
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2%;
+        grid-template-areas:
+        "q r"
+        "s t";
+    }
+    img{
+        width: 70%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .topImage{
+        width: 40%;
+    }
+}
+
+/* LAPTOP LAYOUT */
+@media (min-width: 1024px){
+    .wrapper1 {
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2%;
+        grid-template-areas:
+        "e f"
+        "a b"
+        "g h"
+        "c d";
+    }
+    
+    .wrapper2 {
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2%;
+        grid-template-areas:
+        "m n"
+        "i j"
+        "o ."
+        "k .";
+    }
+    
+    .wrapper3 {
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2%;
+        grid-template-areas:
+        "q r"
+        "s t";
+    }
+    img{
+        width: 70%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .topImage{
+        width: 40%;
+    }
+}
+
+@media (prefers-color-scheme: dark){
+    body{
+        background: #2e2f2e;
+    }
+
+    h1, h2, h3, h4, h5, h6, th, p, ul, ol, td, a:link, a:visited{
+        color: white;
+    }
+
+    a:hover{
+        color:black;
+    }
+    .textSection{
+        border: 10px solid darkslategray;
+        border-radius: 5%;
+        padding: 0%;
+    }
+    p{
+        font-size: 1.2em;
+        background-color: darkgreen;
+        padding: 2%;
+        border-radius: 5%;
+        margin: 0%;
+    }
+    .nav-item{
+        background-color: darkgreen;
+        border: 5px solid darkslategray;
+        font-size: 1.2em;
+        padding: 1%;
+        padding-left: 7.5%;
+        padding-right: 7.5%;
+        margin: 1%;
+        text-align: center;
+      }
+}

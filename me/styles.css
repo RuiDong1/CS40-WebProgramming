@@ -1,0 +1,78 @@
+h1, h2, h3, h4, h5, h6 {
+    color: #c64500; 
+    font-family: Arial, sans-serif; 
+    font-size: auto;
+}
+
+p, ul, ol{
+    color: #e47028; 
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+}
+
+a:link, a:visited {
+    color: #000063;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #02aede;
+    background-color: #563200;
+}
+
+a:active {
+    text-decoration: underline overline;
+    color: #86e5ff;
+    background-color: #563200;
+}
+
+#indexpage{
+    background-image: url("dogbackground.jpeg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+}
+#favoriteFoodpage{
+    background-color: lightgray;
+}
+#queenspage{
+    background-color: lightgray;
+}
+#queensContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+.queensArticles{
+    padding: 15px;
+    border-left: 4px solid orangered;
+    border-right: 4px solid orangered;
+
+}
+.menubar{
+    display: flex;
+    list-style-type: none;
+    padding-left: 5px;
+}
+.menubaritem{
+    padding-right: 15px;
+}
+
+.odd{
+    width: fit-content;
+    background-color: lightyellow;
+    border: 2px solid orange;
+}
+
+.even{
+    width: fit-content;
+    background-color: lightskyblue;
+    border: 2px solid orange;
+}
+
+#intro{
+    width: 30%;
+    border-top: 2px solid #a87b32;
+    border-bottom: 2px solid #a87b32;
+}
